@@ -244,9 +244,10 @@ span:hover::after {
   max-width: 500px;
 }
 .TechSection {
-  height: 80vh;
+  height: 85vh;
   display: flex;
   width: 100%;
+  padding-top: 50px;
   justify-content: center;
   align-items: center;
 }
@@ -254,6 +255,7 @@ span:hover::after {
   display: flex;
   justify-content: space-evenly;
   width: 85%;
+
   max-width: 900px;
   flex-wrap: wrap;
 }
@@ -263,6 +265,7 @@ span:hover::after {
 .techImg {
   border-radius: 8px;
   width: 20vw;
+
   max-width: 170px;
 }
 .Mobile {

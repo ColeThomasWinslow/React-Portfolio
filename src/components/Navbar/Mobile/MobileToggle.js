@@ -3,16 +3,17 @@ import Menu from "../../../icons/Menu.svg";
 import Logo from "../../../icons/Developer.svg";
 import MobileExternalLinks from "./MobileExternalLinks";
 import MobileNavElements from "./MobileNavElements";
+import { Link } from "react-scroll";
 function MobileToggle() {
   const [OpenMenu, setOpenMenu] = useState(false);
   return (
     <div className="Mobile">
       <div className="MobileNavBar">
-        <a className="NavElm" href="/">
+        <Link to="home">
           <span>
-            <img className="Logo" src={Logo} alt="Projects" />
+            <img className="Logo" src={Logo} alt="Logo" />
           </span>
-        </a>
+        </Link>
         <div
           onClick={() => {
             setOpenMenu(!OpenMenu);

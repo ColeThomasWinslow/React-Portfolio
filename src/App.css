@@ -364,7 +364,7 @@ span:hover::after {
   width: 30px;
   height: 30px;
   text-decoration: none;
-  margin: 50px;
+  margin: 30px;
 }
 .MobileNavElm:hover {
   opacity: 60%;

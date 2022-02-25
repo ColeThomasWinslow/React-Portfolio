@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 function Hero() {
   return (
@@ -10,7 +11,15 @@ function Hero() {
         I'm a software engineer focused on coding web applications that are
         complex, scalable, and highly performant.
       </p>
-      <button className="Btn CTA">Contact Me</button>
+      <Link
+        to="contact"
+        spy={true}
+        smooth={true}
+        duration={400}
+        className="Btn CTA"
+      >
+        Contact Me
+      </Link>
     </div>
   );
 }

@@ -167,7 +167,7 @@ span:hover::after {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  width: 50vw;
+  width: 65vw;
   padding: 30px;
 
   max-width: 550px;
@@ -305,6 +305,9 @@ span:hover::after {
   }
   .Hero {
     padding-top: 150px;
+  }
+  .Title {
+    font-size: 3rem;
   }
 }
 @media screen and (min-width: 986px) {

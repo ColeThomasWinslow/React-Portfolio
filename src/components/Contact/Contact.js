@@ -4,7 +4,7 @@ function Contact() {
   return (
     <div className="ContactSection" name="contact">
       <div className="ContactMessage">
-        <h1 className="SubTitle"> I'd love to hear from you</h1>
+        <h1 className="SubTitle Big"> I'd love to hear from you</h1>
         <p className="Description">
           For job inquiries or any questions please feel free to send me a
           message and I'll get back to you as soon as possible.

@@ -173,8 +173,8 @@ span:hover::after {
   max-width: 550px;
 }
 .ProjectImg {
-  border-radius: 5px;
-  border: 3px solid #8892b0;
+  border-radius: 2px;
+
   width: 200px;
   height: 200px;
   margin: 20px;
@@ -192,12 +192,16 @@ span:hover::after {
   border: 2px solid white;
 }
 .ContactForm {
+  background: #112240;
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 90vw;
+  width: 70vw;
   padding: 10px;
-  max-width: 400px;
+  border: 2px solid white;
+  max-width: 450px;
+  border-radius: 5px;
+  padding-bottom: 20px;
 }
 .ContactSection {
   display: flex;
@@ -213,7 +217,7 @@ span:hover::after {
   margin: 15px;
   border: none;
   padding: 15px;
-  width: 80vw;
+  width: 60vw;
   max-width: 400px;
   border-bottom: 5px solid #6cb4f6;
 }
@@ -223,7 +227,7 @@ span:hover::after {
   font-size: 14px;
   border: none;
   padding: 15px;
-  width: 80vw;
+  width: 60vw;
   max-width: 400px;
   height: 150px;
   border-bottom: 5px solid #6cb4f6;
@@ -238,6 +242,12 @@ span:hover::after {
   padding: 20px;
   width: 65vw;
   max-width: 500px;
+}
+.TechSection {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .Mobile {
   width: 100%;
@@ -271,7 +281,11 @@ span:hover::after {
 .MobileIcon {
   width: 28px;
 }
-
+.Big {
+  font-size: 1.8rem;
+  padding-bottom: 20px;
+  border-bottom: 2px solid white;
+}
 .MobileNavElm {
   display: flex;
   background: #6cb4f6;
@@ -307,7 +321,7 @@ span:hover::after {
     padding-top: 150px;
   }
   .Title {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 @media screen and (min-width: 986px) {

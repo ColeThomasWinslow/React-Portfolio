@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-scroll";
 import Folder from "../../../icons/Folder.svg";
 import Gear from "../../../icons/Gear.svg";

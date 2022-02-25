@@ -14,9 +14,8 @@ function App() {
         <Hero />
         <Projects />
         <Tech />
-        <Contact />
+        <Contact /> <Footer />
       </div>
-      <Footer />
     </div>
   );
 }

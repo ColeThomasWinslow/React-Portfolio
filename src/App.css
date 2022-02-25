@@ -289,16 +289,19 @@ span:hover::after {
 }
 .Footer {
   width: 100%;
-  background: #112240;
+  padding-top: 90px;
   display: flex;
+  justify-content: flex-end;
   flex-direction: column;
   align-items: center;
 }
 .FootNote {
+  background: #112240;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding: 4px;
+  padding: 15px;
+  border-radius: 10px;
 }
 .Check {
   margin-left: 20px;

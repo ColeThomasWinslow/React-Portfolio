@@ -10,7 +10,7 @@ function Contact() {
           message and I'll get back to you as soon as possible.
         </p>
         <div className="PhoneBox">
-          <a className="PhoneImgWrap" href="tel:+6308020888">
+          <a className="PhoneImgWrap" href="tel:6308020888">
             <img className="PhoneImg" src={Phone} alt="Phone" />
           </a>
         </div>

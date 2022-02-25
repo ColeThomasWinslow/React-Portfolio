@@ -17,7 +17,7 @@ function NavBar() {
   }, []);
 
   return (
-    <div className={`NavBar ${ScrollNav && "Scrolled"} `} ScrollNav={ScrollNav}>
+    <div className={`NavBar ${ScrollNav && "Scrolled"} `}>
       <NavElements />
       <ExternalLinks />
       <MobileToggle />

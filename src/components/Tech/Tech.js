@@ -7,7 +7,7 @@ function Tech() {
       <div className="TechCont">
         {TechData.map((tech) => {
           return (
-            <div className="TechImpWrap">
+            <div key={tech.id} className="TechImpWrap">
               <img
                 className="techImg"
                 src={tech.img}

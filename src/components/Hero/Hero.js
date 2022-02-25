@@ -12,6 +12,7 @@ function Hero() {
         complex, scalable, and highly performant.
       </p>
       <Link
+        style={{ textAlign: "center", maxWidth: "200px" }}
         to="contact"
         spy={true}
         smooth={true}

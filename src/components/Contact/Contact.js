@@ -1,5 +1,5 @@
 import React from "react";
-
+import Phone from "../../icons/Phone.svg";
 function Contact() {
   return (
     <div className="ContactSection" name="contact">
@@ -9,6 +9,11 @@ function Contact() {
           For job inquiries or any questions please feel free to send me a
           message and I'll get back to you as soon as possible.
         </p>
+        <div className="PhoneBox">
+          <a className="PhoneImgWrap" href="tel:+6308020888">
+            <img className="PhoneImg" src={Phone} alt="Phone" />
+          </a>
+        </div>
       </div>
       <form
         className="ContactForm"

@@ -1,38 +1,314 @@
+body {
+  margin: 0px;
+  background: #0a192f;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: column;
+}
+.Content {
+  width: 90vw;
+  max-width: 1200px;
+}
+.Title {
+  color: #e6f9fffb;
+  margin: 0px;
+  font-size: 4rem;
+}
+.Secondary {
+  color: #8892b0;
+}
+.SubTitle {
+  margin: 0px;
+  font-size: 1.2rem;
+  color: #6cb4f6;
+}
+.Description {
+  color: #ffffffdc;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 30px;
+  margin: 20px 0px 0px;
+  max-width: 540px;
+}
+.Btn {
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 5px;
+  background: transparent;
+  border: 2px solid #6cb4f6;
+  color: #6cb4f6;
+  background: linear-gradient(to right, #ffffff34 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.3s ease-out;
+}
+.Btn:hover {
+  background-position: left bottom;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.SmallBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  height: 28px;
+
+  width: 150px;
+}
+.CTA {
+  margin-top: 40px;
+  font-size: 14px;
+  width: 220px;
+  padding: 15px;
+}
+.NavBar {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  z-index: 20;
+  width: 100vw;
+  align-items: center;
+  justify-content: space-evenly;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.Hero {
+  display: flex;
+  padding: 50px;
+  justify-content: center;
+  flex-direction: column;
+
+  min-height: 80vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.Icon {
+  width: 22px;
+}
+.Icon:hover {
+  opacity: 70%;
+}
+.LinkCont {
+  width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.NavElm {
+  text-decoration: none;
+  color: white;
+}
+.Logo {
+  margin-left: 20px;
+  width: 130px;
+}
+.ElmImg {
+  width: 18px;
+  margin-right: 10px;
+}
+span {
+  display: flex;
+  align-items: center;
+
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 1.42px;
+  position: relative;
+}
+span::after {
+  content: "";
+  height: 2px;
+  background: #6cb4f6;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -12px;
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+}
+span:hover::after {
+  transform: scaleX(1);
+  opacity: 1;
+}
+
+.NavElmContainer {
+  width: 55vw;
+  max-width: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.Scrolled {
+  background: #0c1522d5;
+}
+
+.ProjectCard {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 20px;
+
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+.ProjectInfo {
+  border-top: 3px solid white;
+  background: #112240;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 50vw;
+  padding: 30px;
+
+  max-width: 550px;
+}
+.ProjectImg {
+  border-radius: 5px;
+  border: 3px solid #8892b0;
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+.BtnCont {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 18px;
+}
+.Live {
+  color: #0c1522c0;
+  background: #8892b0;
+  margin-left: 30px;
+  border: 2px solid white;
+}
+.ContactForm {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 90vw;
+  padding: 10px;
+  max-width: 400px;
+}
+.ContactSection {
+  display: flex;
+  height: 85vh;
+  padding-top: 40px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.Email {
+  font-size: 14px;
+  margin: 15px;
+  border: none;
+  padding: 15px;
+  width: 80vw;
+  max-width: 400px;
+  border-bottom: 5px solid #6cb4f6;
+}
+.EmailBody {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  border: none;
+  padding: 15px;
+  width: 80vw;
+  max-width: 400px;
+  height: 150px;
+  border-bottom: 5px solid #6cb4f6;
+  resize: none;
+}
+.ContactMessage {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: flex-end;
+  padding: 20px;
+  width: 65vw;
+  max-width: 500px;
+}
+.Mobile {
+  width: 100%;
+}
+.MobileNavBar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  justify-content: space-evenly;
+}
+.Menu {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background: #0c1522f5;
+}
+.MobileExternal {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.MobileIcon {
+  width: 28px;
+}
+
+.MobileNavElm {
+  display: flex;
+  background: #6cb4f6;
+  padding: 15px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+
+  text-decoration: none;
+  margin: 50px;
+}
+.MobileNavElm:hover {
+  opacity: 60%;
+}
+.MobileBtn {
+  width: 50vw;
+  margin-top: 60px;
+}
+.MobileContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 986px) {
+  .Desktop {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .Hero {
+    padding-top: 150px;
+  }
+}
+@media screen and (min-width: 986px) {
+  .Mobile {
+    display: none;
   }
 }

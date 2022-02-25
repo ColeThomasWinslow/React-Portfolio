@@ -33,7 +33,7 @@ body {
   font-weight: 300;
   font-size: 1rem;
   line-height: 30px;
-  margin: 20px 0px 0px;
+  margin: 10px 0px 0px;
   max-width: 540px;
 }
 .Btn {
@@ -244,10 +244,26 @@ span:hover::after {
   max-width: 500px;
 }
 .TechSection {
-  height: 60vh;
+  height: 80vh;
   display: flex;
+  width: 100%;
   justify-content: center;
   align-items: center;
+}
+.TechCont {
+  display: flex;
+  justify-content: space-evenly;
+  width: 85%;
+  max-width: 900px;
+  flex-wrap: wrap;
+}
+.TechImpWrap {
+  margin: 12px;
+}
+.techImg {
+  border-radius: 8px;
+  width: 20vw;
+  max-width: 170px;
 }
 .Mobile {
   width: 100%;
@@ -322,6 +338,9 @@ span:hover::after {
   }
   .Title {
     font-size: 2rem;
+  }
+  .Description {
+    font-size: 14px;
   }
 }
 @media screen and (min-width: 986px) {

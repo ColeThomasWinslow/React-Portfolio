@@ -11,10 +11,20 @@ function Projects() {
               <h2 className="SubTitle">{project.title}</h2>
               <p className="Description">{project.desc}</p>
               <div className="BtnCont">
-                <a className="Btn SmallBtn" href={project.gitLink}>
+                <a
+                  className="Btn SmallBtn"
+                  rel="noreferrer"
+                  target="_blank"
+                  href={project.gitLink}
+                >
                   Github
                 </a>
-                <a className="Btn SmallBtn Live" href={project.LiveLink}>
+                <a
+                  className="Btn SmallBtn Live"
+                  rel="noreferrer"
+                  target="_blank"
+                  href={project.LiveLink}
+                >
                   Live Website
                 </a>
               </div>

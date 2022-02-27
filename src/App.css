@@ -167,12 +167,12 @@ span:hover::after {
   justify-content: space-evenly;
   width: 65vw;
   padding: 30px;
-
+  border-radius: 2px;
   max-width: 550px;
 }
 .ProjectImg {
   border-radius: 2px;
-
+  border: 3px solid white;
   width: 200px;
   height: 200px;
   margin: 20px;

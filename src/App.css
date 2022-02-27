@@ -179,6 +179,7 @@ span:hover::after {
 }
 .BtnCont {
   display: flex;
+
   align-items: center;
   justify-content: flex-start;
   margin-top: 18px;
@@ -260,8 +261,8 @@ span:hover::after {
 }
 .techImg {
   border-radius: 8px;
-  width: 20vw;
-  max-width: 170px;
+  width: 18vw;
+  max-width: 125px;
 }
 
 .Footer {
@@ -369,6 +370,24 @@ span:hover::after {
   }
   .Description {
     font-size: 14px;
+  }
+  .BtnCont {
+    width: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .Hero {
+    padding: 20px;
+    padding-top: 110px;
+  }
+  .Live {
+    margin: 0px;
+    margin-top: 10px;
+  }
+  .SmallBtn {
+    width: 90%;
   }
 }
 @media screen and (min-width: 986px) {

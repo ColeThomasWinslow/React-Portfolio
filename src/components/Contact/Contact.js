@@ -17,6 +17,12 @@ function Contact() {
       >
         <input
           className="Email"
+          type="name"
+          name="name"
+          placeholder="Enter Your Name "
+        />
+        <input
+          className="Email"
           type="email"
           name="email"
           placeholder="Enter Your Email Address"

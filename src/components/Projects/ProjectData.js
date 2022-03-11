@@ -3,7 +3,6 @@ import FakeShop from "./ProjectPhotos/FakeShop.png";
 import CarShowSocial from "./ProjectPhotos/CarShowSocial.png";
 import Goal from "./ProjectPhotos/Goal.svg";
 import TypeMaster from "./ProjectPhotos/TypeMaster.png";
-import BudgetTracker from "./ProjectPhotos/BudgetTracker.png";
 
 export const projectData = [
   {

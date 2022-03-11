@@ -200,6 +200,7 @@ span:hover::after {
   border: 2px solid white;
   max-width: 450px;
   border-radius: 5px;
+  padding-top: 30px;
   padding-bottom: 20px;
 }
 .ContactSection {
@@ -213,7 +214,6 @@ span:hover::after {
 
 .Email {
   font-size: 14px;
-  margin: 15px;
   border: none;
   padding: 15px;
   width: 60vw;

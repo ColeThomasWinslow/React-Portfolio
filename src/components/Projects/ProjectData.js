@@ -2,6 +2,7 @@ import Sorting from "./ProjectPhotos/Sorting.png";
 import PayRoll from "./ProjectPhotos/PayRoll.png";
 import FitnessPortal from "./ProjectPhotos/FitnessPortal.png";
 import CoderComments from "./ProjectPhotos/CoderComments.png";
+import CalculationFinance from "./ProjectPhotos/CalculationFinance.png";
 export const projectData = [
   {
     id: 1,
@@ -28,6 +29,20 @@ export const projectData = [
       { name: "Node & Express" },
     ],
     desc: "Web application to track salary and payroll within a company, in addition logging employee contact information.",
+    gitLink: "https://github.com/ColeThomasWinslow/sorting-algo-visualizer",
+    LiveLink: "https://sortalgorithms.netlify.app/",
+  },
+  {
+    id: 1,
+    title: "Calculation Finance",
+    img: CalculationFinance,
+    tech: [
+      { name: "React.js" },
+      { name: "Tailwind CSS" },
+      { name: "Mongo DB" },
+      { name: "Node & Express" },
+    ],
+    desc: "Application for financial calculators. Mortgage, Savings, Loans",
     gitLink: "https://github.com/ColeThomasWinslow/sorting-algo-visualizer",
     LiveLink: "https://sortalgorithms.netlify.app/",
   },

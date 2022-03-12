@@ -30,7 +30,6 @@ body {
   color: #6cb4f6;
 }
 .ProjectTitle {
-  letter-spacing: 1px;
 }
 
 .Description {
@@ -240,7 +239,7 @@ span:hover::after {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 70vw;
+  width: 80vw;
   padding: 10px;
   margin-bottom: 50px;
   border: 2px solid white;
@@ -266,7 +265,7 @@ span:hover::after {
   font-size: 14px;
   border: none;
   padding: 15px;
-  width: 60vw;
+  width: 70vw;
   max-width: 400px;
   border-bottom: 5px solid #6cb4f6;
 }
@@ -276,7 +275,7 @@ span:hover::after {
   font-size: 14px;
   border: none;
   padding: 15px;
-  width: 60vw;
+  width: 70vw;
   max-width: 400px;
   height: 150px;
   border-bottom: 5px solid #6cb4f6;
@@ -287,7 +286,7 @@ span:hover::after {
   flex-direction: column;
   justify-content: flex-end;
   padding: 20px;
-  width: 65vw;
+  width: 70vw;
   max-width: 500px;
 }
 .TechSection {

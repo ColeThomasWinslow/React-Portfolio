@@ -11,6 +11,7 @@ function Contact() {
         </p>
       </div>
       <form
+        autocomplete="off"
         className="ContactForm"
         action="https://formsubmit.co/colewinslow174@gmail.com"
         method="POST"

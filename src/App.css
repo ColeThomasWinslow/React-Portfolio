@@ -7,13 +7,14 @@ body {
 }
 .App {
   width: 100%;
+
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 .Content {
   width: 96vw;
-  max-width: 1200px;
+  max-width: 1500px;
 }
 .Title {
   color: #e6f9fffb;
@@ -28,6 +29,10 @@ body {
   font-size: 1.2rem;
   color: #6cb4f6;
 }
+.ProjectTitle {
+  letter-spacing: 1px;
+}
+
 .Description {
   color: #ffffffdc;
   font-weight: 300;
@@ -80,6 +85,23 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
+}
+.TechUsedCont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.TechUsedCont p {
+  font-weight: bold;
+  background: white;
+  color: #6cb4f6;
+  border-radius: 4px;
+  box-shadow: inset 0px 0px 4px;
+  padding: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 12px;
+  font-size: 12px;
 }
 .Hero {
   display: flex;
@@ -155,30 +177,34 @@ span:hover::after {
   justify-content: space-evenly;
   align-items: center;
   margin: 20px;
-
+  border-radius: 5px;
   margin-top: 40px;
   flex-wrap: wrap;
 }
 .ProjectInfo {
   border-top: 3px solid white;
   background: #112240;
+  box-shadow: 2px 0px 10px black;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   width: 65vw;
   padding: 30px;
   border-radius: 2px;
-  max-width: 550px;
+  max-width: 700px;
+  background-image: url("./Swirl.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .ProjectImg {
   border-radius: 2px;
-
-  height: 220px;
+  width: 80vw;
+  max-width: 350px;
   margin: 20px;
 }
 .BtnCont {
   display: flex;
-
   align-items: center;
   justify-content: flex-start;
   margin-top: 18px;
@@ -188,6 +214,26 @@ span:hover::after {
   background: #8892b0;
   margin-left: 30px;
   border: 2px solid white;
+}
+.Direct {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-radius: 2px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.Direct span {
+  color: #6cb4f6;
+  margin-top: 10px;
+  cursor: default;
+  font-weight: bold;
+  text-transform: lowercase;
+}
+.Direct span::after {
+  display: none;
 }
 .ContactForm {
   background: #112240;
@@ -202,6 +248,10 @@ span:hover::after {
   border-radius: 5px;
   padding-top: 30px;
   padding-bottom: 20px;
+  background-image: url("./Swirl.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .ContactSection {
   display: flex;
@@ -259,9 +309,10 @@ span:hover::after {
   margin: 12px;
 }
 .techImg {
-  border-radius: 8px;
+  border-radius: 3px;
   width: 18vw;
-  max-width: 125px;
+  box-shadow: 2px 2px 10px black;
+  max-width: 170px;
 }
 
 .Footer {
@@ -365,7 +416,7 @@ span:hover::after {
     padding-top: 150px;
   }
   .Title {
-    font-size: 2rem;
+    font-size: 2.3rem;
   }
   .Description {
     font-size: 14px;

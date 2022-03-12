@@ -8,8 +8,13 @@ function Projects() {
           <div key={project.id} className="ProjectCard">
             <img className="ProjectImg" src={project.img} alt={project.title} />
             <div className="ProjectInfo">
-              <h2 className="SubTitle">{project.title}</h2>
+              <h2 className="SubTitle ProjectTitle">{project.title}</h2>
               <p className="Description">{project.desc}</p>
+              <div className="TechUsedCont">
+                {project.tech.map((item) => {
+                  return <p>{item.name}</p>;
+                })}
+              </div>
               <div className="BtnCont">
                 <a
                   className="Btn SmallBtn"

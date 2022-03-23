@@ -13,8 +13,8 @@ body {
   flex-direction: column;
 }
 .Content {
-  width: 96vw;
-  max-width: 1500px;
+  width: 90vw;
+  max-width: 1400px;
 }
 .Title {
   color: #e6f9fffb;
@@ -175,7 +175,7 @@ span:hover::after {
   align-items: center;
   margin: 20px;
   border-radius: 5px;
-  margin-top: 40px;
+  margin-top: 50px;
   flex-wrap: wrap;
 }
 .ProjectInfo {
@@ -197,7 +197,7 @@ span:hover::after {
 .ProjectImg {
   border-radius: 2px;
   width: 80vw;
-  max-width: 350px;
+  max-width: 320px;
   margin: 20px;
 }
 .BtnCont {

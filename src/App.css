@@ -91,10 +91,10 @@ body {
 }
 .TechUsedCont p {
   font-weight: thin;
-  background: white;
-  color: #6cb4f6;
+  background: #ffffff;
+  color: #4f96d8;
   border-radius: 4px;
-  box-shadow: inset 0px 0px 4px;
+  /* box-shadow: inset 0px 0px 4px; */
   padding: 4px;
   padding-left: 10px;
   padding-right: 10px;
@@ -180,9 +180,9 @@ span:hover::after {
   flex-wrap: wrap;
 }
 .ProjectInfo {
-  border-top: 3px solid white;
-  background: #112240;
-  box-shadow: 2px 0px 10px black;
+  border-top: 3px solid #ffffff34;
+  background: #081429;
+  /* box-shadow: 2px 0px 10px black; */
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -234,14 +234,14 @@ span:hover::after {
   display: none;
 }
 .ContactForm {
-  background: #112240;
+  background: #081429;
   display: flex;
   align-items: center;
   flex-direction: column;
   width: 80vw;
   padding: 10px;
   margin-bottom: 50px;
-  border: 2px solid white;
+  border: 2px solid #ffffff5e;
   max-width: 450px;
   border-radius: 5px;
   padding-top: 30px;
@@ -406,6 +406,46 @@ span:hover::after {
   align-items: center;
   justify-content: center;
 }
+.container {
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 auto;
+  position: absolute;
+  z-index: -20;
+  right: 10vw;
+  margin-top: 100px;
+}
+
+.gear {
+  background-image: url(./icons/BigGear.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  z-index: -10;
+}
+.gear2 {
+  filter: opacity(18%);
+  width: 290px;
+  height: 290px;
+}
+.gear3 {
+  width: 170px;
+  height: 170px;
+  filter: opacity(15%);
+  margin: 0 0px -290px -85px;
+}
+.gear1 {
+  width: 222px;
+  filter: opacity(10%);
+  height: 222px;
+  margin: 0 -80px 140px -20px;
+}
 @media screen and (max-width: 986px) {
   .Desktop {
     display: none;
@@ -439,6 +479,9 @@ span:hover::after {
   }
   .SmallBtn {
     width: 90%;
+  }
+  .container {
+    overflow: hidden;
   }
 }
 @media screen and (min-width: 986px) {

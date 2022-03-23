@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-scroll";
 
 function Hero() {
+  const [Scroll1, setScroll1] = useState("");
+  const [Scroll2, setScroll2] = useState("");
+  window.onscroll = function rotateGear() {
+    setScroll1("rotate(" + (window.scrollY * 6.5) / 18 + "deg)");
+    setScroll2("rotate(-" + (window.scrollY * 6.5) / 18 + "deg)");
+  };
+  console.log(Scroll1);
   return (
     <div className="Hero" name="home">
       <p className="SubTitle">Hi, my name is</p>
@@ -28,6 +35,11 @@ function Hero() {
       >
         Contact Me
       </Link>
+      <div class="container gears">
+        <div style={{ transform: Scroll1 }} id="gear1" class="gear gear1"></div>
+        <div style={{ transform: Scroll2 }} class="gear gear2"></div>
+        <div style={{ transform: Scroll1 }} class="gear gear3"></div>
+      </div>
     </div>
   );
 }

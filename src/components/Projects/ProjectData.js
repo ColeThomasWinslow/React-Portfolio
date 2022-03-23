@@ -32,7 +32,7 @@ export const projectData = [
     ],
     desc: "Web application to track salary and payroll within a company, in addition logging employee contact information.",
     gitLink: "https://github.com/ColeThomasWinslow/Payroll",
-    LiveLink: "https://sortalgorithms.netlify.app/",
+    LiveLink: "https://payrollctw.netlify.app/",
   },
   {
     id: 1,
@@ -45,8 +45,8 @@ export const projectData = [
       { name: "Node & Express" },
     ],
     desc: "Application for financial calculators. Mortgage, Savings, Loans",
-    gitLink: "https://github.com/ColeThomasWinslow/sorting-algo-visualizer",
-    LiveLink: "https://sortalgorithms.netlify.app/",
+    gitLink: "https://github.com/ColeThomasWinslow/Calculation-Finance",
+    LiveLink: "https://calculationfinance.netlify.app/",
   },
   {
     id: 1,

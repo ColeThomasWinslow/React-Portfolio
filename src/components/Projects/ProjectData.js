@@ -32,7 +32,7 @@ export const projectData = [
     ],
     desc: "Web application to track salary and payroll within a company, in addition logging employee contact information.",
     gitLink: "https://github.com/ColeThomasWinslow/Payroll",
-    LiveLink: "https://payrollctw.netlify.app/",
+    LiveLink: "https://payroll-app-ctw.herokuapp.com/Login",
   },
   {
     id: 1,

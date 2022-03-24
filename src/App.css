@@ -181,7 +181,7 @@ span:hover::after {
 }
 .ProjectInfo {
   border-top: 3px solid #ffffff34;
-  background: #081429;
+  background: #15305e5d;
   /* box-shadow: 2px 0px 10px black; */
   display: flex;
   flex-direction: column;
@@ -234,7 +234,7 @@ span:hover::after {
   display: none;
 }
 .ContactForm {
-  background: #081429;
+  background: #15305e5d;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -309,7 +309,7 @@ span:hover::after {
 .techImg {
   border-radius: 3px;
   width: 18vw;
-  box-shadow: 2px 2px 10px black;
+  box-shadow: 2px 3px 5px #0000006b;
   max-width: 170px;
 }
 

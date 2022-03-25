@@ -180,14 +180,14 @@ span:hover::after {
   flex-wrap: wrap;
 }
 .ProjectInfo {
-  border-top: 3px solid #ffffff34;
-  background: #15305e5d;
+  border: 3px solid #ffffff34;
+  background: #1128505d;
   /* box-shadow: 2px 0px 10px black; */
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   width: 95vw;
-  padding: 30px;
+  padding: 20px;
   border-radius: 2px;
   max-width: 700px;
   background-image: url("./Swirl.png");
@@ -417,7 +417,7 @@ span:hover::after {
   margin: 0 auto;
   position: absolute;
   z-index: -20;
-  right: 10vw;
+  left: 55vw;
   margin-top: 100px;
 }
 

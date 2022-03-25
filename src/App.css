@@ -198,7 +198,7 @@ span:hover::after {
 .ProjectImg {
   border-radius: 2px;
   width: 80vw;
-  max-width: 320px;
+  max-width: 370px;
   margin: 20px;
 }
 .BtnCont {
@@ -417,7 +417,7 @@ span:hover::after {
   margin: 0 auto;
   position: absolute;
   z-index: -20;
-  left: 55vw;
+  left: 50vw;
   margin-top: 100px;
 }
 
@@ -430,19 +430,19 @@ span:hover::after {
   z-index: -10;
 }
 .gear2 {
-  filter: opacity(18%);
+  filter: opacity(38%);
   width: 290px;
   height: 290px;
 }
 .gear3 {
   width: 170px;
   height: 170px;
-  filter: opacity(15%);
+  filter: opacity(25%);
   margin: 0 0px -290px -85px;
 }
 .gear1 {
   width: 222px;
-  filter: opacity(10%);
+  filter: opacity(15%);
   height: 222px;
   margin: 0 -80px 140px -20px;
 }
@@ -481,7 +481,7 @@ span:hover::after {
     width: 90%;
   }
   .container {
-    overflow: hidden;
+    display: none;
   }
 }
 @media screen and (min-width: 986px) {

@@ -30,7 +30,7 @@ export const projectData = [
       { name: "Algorithms" },
     ],
     desc: "Visualization tool to compare different sorting algorithms and see the time complexity for each method.",
-    gitLink: "https://github.com/ColeThomasWinslow/sorting-algo-visualizer",
+    gitLink: "https://github.com/ColeThomasWinslow/Blunder-Bugs",
     LiveLink: "https://sortalgorithms.netlify.app/",
   },
   {

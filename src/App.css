@@ -255,6 +255,7 @@ span:hover::after {
   display: flex;
   height: 85vh;
   padding-top: 40px;
+  padding-bottom: 90px;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;

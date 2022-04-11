@@ -31,7 +31,7 @@ export const projectData = [
       { name: "Redux" },
       { name: "JWT (Json Web Tokens)" },
     ],
-    desc: "Bug tracking system that keeps track of reported software bugs in the development process. Assign rolls and give permissions to different employees.",
+    desc: "Bug tracking system that keeps track of reported software bugs in the development process. Assign roles and give permissions to different employees.",
     gitLink: "https://github.com/ColeThomasWinslow/Blunder-Bugs",
     LiveLink: "https://sortalgorithms.netlify.app/",
   },

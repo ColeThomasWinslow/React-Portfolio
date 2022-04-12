@@ -1,12 +1,7 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 function Contact() {
-  const navigate = useNavigate();
-
-  const Redirect = () => {
-    navigate("/confirm");
-  };
   return (
     <div className="ContactSection" name="contact">
       <div className="ContactMessage">
@@ -17,7 +12,6 @@ function Contact() {
         </p>
       </div>
       <form
-        onSubmit={Redirect}
         autoComplete="off"
         className="ContactForm"
         action="https://formsubmit.co/colewinslow174@gmail.com"

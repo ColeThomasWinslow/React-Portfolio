@@ -17,6 +17,11 @@ function Contact() {
         method="POST"
       >
         <input
+          type="hidden"
+          name="_next"
+          value="https://colewinslowportfolio.netlify.app/confirm"
+        ></input>
+        <input
           className="Email"
           type="name"
           name="name"

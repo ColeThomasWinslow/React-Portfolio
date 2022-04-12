@@ -381,6 +381,43 @@ span:hover::after {
   padding-bottom: 20px;
   border-bottom: 2px solid white;
 }
+.PageBox {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: Center;
+  align-items: center;
+  flex-direction: column;
+}
+.PageIcon {
+  width: 10vw;
+  max-width: 100px;
+  margin-bottom: 30px;
+  opacity: 30%;
+}
+.CTAHolder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.CTAHolder a {
+  margin: 20px;
+}
+.BackBtn {
+  color: white;
+  font-size: 15px;
+  margin: 20px;
+  font-weight: bold;
+}
+.TitleCont {
+  width: 80vw;
+  max-width: 800px;
+  margin-bottom: 50px;
+}
+.TitleCont h2 {
+  text-align: center;
+  font-size: 35px;
+}
 .MobileNavElm {
   display: flex;
   background: #6cb4f6;

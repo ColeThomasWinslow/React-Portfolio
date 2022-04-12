@@ -1,22 +1,21 @@
 import "./App.css";
-import Contact from "./components/Contact/Contact";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-import Hero from "./components/Hero/Hero";
-import NavBar from "./components/Navbar/NavBar";
-import Projects from "./components/Projects/Projects";
-import Tech from "./components/Tech/Tech";
+import Home from "./Pages/Home";
+import Conformation from "./Pages/Conformation";
+import Resume from "./Pages/Resume";
 
 function App() {
   return (
-    <div className="App">
-      <NavBar />
-      <div className="Content">
-        <Hero />
-        <Projects />
-        <Tech />
-        <Contact />
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="/confirm" element={<Conformation />} />
+        </Routes>
       </div>
-    </div>
+    </Router>
   );
 }
 

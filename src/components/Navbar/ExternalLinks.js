@@ -1,7 +1,9 @@
 import React from "react";
 import Github from "../../icons/Github.svg";
 import Linkedin from "../../icons/Linkedin.svg";
-import Resume from "../../icons/ColeWinslowResume.pdf";
+
+import { Link } from "react-router-dom";
+
 function ExternalLinks() {
   return (
     <div className="LinkCont Desktop">
@@ -19,14 +21,9 @@ function ExternalLinks() {
       >
         <img className="Icon" src={Linkedin} alt="Linkedin" />
       </a>
-      <a
-        className="Btn SmallBtn"
-        rel="noreferrer"
-        target="_blank"
-        href={Resume}
-      >
+      <Link to="resume" className="Btn SmallBtn">
         Resume
-      </a>
+      </Link>
     </div>
   );
 }

@@ -17,11 +17,6 @@ function Contact() {
         method="POST"
       >
         <input
-          type="hidden"
-          name="_next"
-          value="https://colewinslowportfolio.netlify.app/confirm"
-        ></input>
-        <input
           className="Email"
           type="name"
           name="name"
@@ -44,8 +39,8 @@ function Contact() {
         <input
           type="hidden"
           name="_next"
-          value="https://colewinslowportfolio.netlify.app/"
-        />
+          value="https://colewinslowportfolio.netlify.app/confirm"
+        ></input>
         <button className="Btn CTA" type="submit">
           Send Message
         </button>

@@ -42,11 +42,7 @@ function Contact() {
           required
         ></textarea>
         <input type="hidden" name="_captcha" value="false" />
-        <input
-          type="hidden"
-          name="_next"
-          value="https://colewinslowportfolio.netlify.app/"
-        />
+
         <button className="Btn CTA" type="submit">
           Send Message
         </button>

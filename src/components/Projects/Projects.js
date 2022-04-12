@@ -12,7 +12,7 @@ function Projects() {
               <p className="Description">{project.desc}</p>
               <div className="TechUsedCont">
                 {project.tech.map((item) => {
-                  return <p>{item.name}</p>;
+                  return <p key={item.name}>{item.name}</p>;
                 })}
               </div>
               <div className="BtnCont">

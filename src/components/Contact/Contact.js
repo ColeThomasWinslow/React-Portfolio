@@ -18,7 +18,7 @@ function Contact() {
       </div>
       <form
         onSubmit={Redirect}
-        autocomplete="off"
+        autoComplete="off"
         className="ContactForm"
         action="https://formsubmit.co/colewinslow174@gmail.com"
         method="POST"

@@ -20,7 +20,7 @@ export const projectData = [
     LiveLink: "https://payroll-app-ctw.herokuapp.com/Login",
   },
   {
-    id: 3,
+    id: 2,
     title: "Blunder Bugs ",
     img: BlunderBugs,
     tech: [
@@ -36,7 +36,7 @@ export const projectData = [
     LiveLink: "https://sortalgorithms.netlify.app/",
   },
   {
-    id: 2,
+    id: 3,
     title: "Calculation Finance",
     img: CalculationFinance,
     tech: [{ name: "React.js" }, { name: "CSS" }, { name: "Algorithms" }],
@@ -45,7 +45,7 @@ export const projectData = [
     LiveLink: "https://calculationfinance.netlify.app/",
   },
   {
-    id: 3,
+    id: 4,
     title: "Sorting Visualizer ",
     img: Sorting,
     tech: [

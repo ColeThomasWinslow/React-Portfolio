@@ -8,7 +8,7 @@ function Hero() {
     setScroll1("rotate(" + (window.scrollY * 6.5) / 18 + "deg)");
     setScroll2("rotate(-" + (window.scrollY * 6.5) / 18 + "deg)");
   };
-  console.log(Scroll1);
+
   return (
     <div className="Hero" name="home">
       <p className="SubTitle">Hi, my name is</p>
@@ -35,10 +35,14 @@ function Hero() {
       >
         Contact Me
       </Link>
-      <div class="container gears">
-        <div style={{ transform: Scroll1 }} id="gear1" class="gear gear1"></div>
-        <div style={{ transform: Scroll2 }} class="gear gear2"></div>
-        <div style={{ transform: Scroll1 }} class="gear gear3"></div>
+      <div className="container gears">
+        <div
+          style={{ transform: Scroll1 }}
+          id="gear1"
+          className="gear gear1"
+        ></div>
+        <div style={{ transform: Scroll2 }} className="gear gear2"></div>
+        <div style={{ transform: Scroll1 }} className="gear gear3"></div>
       </div>
     </div>
   );

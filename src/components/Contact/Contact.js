@@ -1,6 +1,12 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function Contact() {
+  const navigate = useNavigate();
+
+  const Redirect = () => {
+    navigate("/confirm");
+  };
   return (
     <div className="ContactSection" name="contact">
       <div className="ContactMessage">
@@ -11,11 +17,17 @@ function Contact() {
         </p>
       </div>
       <form
+        onSubmit={Redirect}
         autocomplete="off"
         className="ContactForm"
         action="https://formsubmit.co/colewinslow174@gmail.com"
         method="POST"
       >
+        <input
+          type="hidden"
+          name="_next"
+          value="https://colewinslowportfolio.netlify.app/confirm"
+        ></input>
         <input
           className="Email"
           type="name"
@@ -39,8 +51,8 @@ function Contact() {
         <input
           type="hidden"
           name="_next"
-          value="https://colewinslowportfolio.netlify.app/confirm"
-        ></input>
+          value="https://colewinslowportfolio.netlify.app/"
+        />
         <button className="Btn CTA" type="submit">
           Send Message
         </button>

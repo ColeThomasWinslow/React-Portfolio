@@ -27,12 +27,14 @@ function Contact() {
           type="name"
           name="name"
           placeholder="Enter Your Name "
+          required
         />
         <input
           className="Email"
           type="email"
           name="email"
           placeholder="Enter Your Email Address"
+          required
         />
         <textarea
           className="EmailBody"

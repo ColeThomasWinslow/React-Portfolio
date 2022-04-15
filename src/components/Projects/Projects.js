@@ -2,7 +2,7 @@ import React from "react";
 import { projectData } from "./ProjectData";
 function Projects() {
   return (
-    <div name="projects">
+    <div name="projects" className="Projects">
       {projectData.map((project) => {
         return (
           <div key={project.id} className="ProjectCard">

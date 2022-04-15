@@ -7,19 +7,18 @@ body {
 }
 .App {
   width: 100%;
-
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 .Content {
-  width: 90vw;
-  max-width: 1400px;
+  width: 100%;
 }
+
 .Title {
   color: #e6f9fffb;
   margin: 0px;
-  font-size: 4rem;
+  font-size: 4.6rem;
 }
 .Secondary {
   color: #8892b0;
@@ -101,12 +100,19 @@ body {
   margin-right: 12px;
   font-size: 12px;
 }
+.HeroContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
 .Hero {
   display: flex;
   padding: 50px;
   justify-content: center;
   flex-direction: column;
-  min-height: 80vh;
+  min-height: 90vh;
+  width: 78%;
+  max-width: 1300px;
 }
 
 .Icon {
@@ -132,6 +138,17 @@ body {
 .ElmImg {
   width: 18px;
   margin-right: 10px;
+}
+.Projects {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 20px;
+  box-shadow: inset 2px 0px 16px #090d1394;
+  padding-bottom: 20px;
+  background: #0c1522d5;
 }
 span {
   display: flex;
@@ -176,6 +193,8 @@ span:hover::after {
   align-items: center;
   margin: 20px;
   border-radius: 5px;
+  width: 90%;
+  max-width: 1600px;
   margin-top: 50px;
   flex-wrap: wrap;
 }
@@ -313,35 +332,73 @@ span:hover::after {
   box-shadow: 2px 3px 5px #0000006b;
   max-width: 170px;
 }
-
-.Footer {
-  width: 100%;
-  margin-top: 100px;
-  padding-top: 90px;
+.Looking {
+  font-size: 12px;
+}
+.ActiveCont {
   display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
+  background: #0c121b;
+  align-items: center;
+  width: 240px;
+  justify-content: center;
+}
+.Footer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  background: #0c1522d5;
   align-items: center;
 }
 .FootNote {
-  background: #112240;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   padding: 15px;
+  max-width: 1600px;
+  width: 100%;
   border-radius: 10px;
 }
 .Check {
   margin-left: 20px;
 }
+.ContactIcons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  max-width: 200px;
+  margin: 20px;
+}
+.ContactIcons a {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 12px;
+  width: 150px;
+  justify-content: flex-start;
+  text-decoration: none;
+
+  margin-bottom: 25px;
+}
+.ContactIcons span {
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.ContactIcons img {
+  padding-right: 20px;
+}
 .Copy {
   margin: 0px;
-  font-size: 14px;
+  font-size: 12px;
   padding-top: 15px;
   padding-bottom: 15px;
-  width: 100%;
+
   text-align: center;
-  background: #6cb4f6;
 }
 .Mobile {
   width: 100%;

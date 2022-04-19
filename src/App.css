@@ -381,7 +381,6 @@ span:hover::after {
   width: 150px;
   justify-content: flex-start;
   text-decoration: none;
-
   margin-bottom: 25px;
 }
 .ContactIcons span {
@@ -577,6 +576,13 @@ span:hover::after {
   }
   .container {
     display: none;
+  }
+  .ContactIcons {
+    max-width: 100%;
+    align-items: center;
+  }
+  .ContactIcons a {
+    justify-content: space-evenly;
   }
 }
 @media screen and (min-width: 986px) {

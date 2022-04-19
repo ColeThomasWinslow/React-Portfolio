@@ -1,8 +1,9 @@
 import React from "react";
 import Github from "../../icons/Github.svg";
 import Linkedin from "../../icons/Linkedin.svg";
-
-import { Link } from "react-router-dom";
+import ResumeFILE from "../../icons/ColeWinslowResume.pdf";
+import Download from "../../icons/download.svg";
+import Open from "../../icons/Open.svg";
 
 function ExternalLinks() {
   return (
@@ -21,9 +22,23 @@ function ExternalLinks() {
       >
         <img className="Icon" src={Linkedin} alt="Linkedin" />
       </a>
-      <Link to="resume" className="Btn SmallBtn">
+      <div to="resume" className="Btn SmallBtn tooltip ">
         Resume
-      </Link>
+        <div className="tooltiptext">
+          <a href={ResumeFILE} download="ColeWinslowResume" className="Tag">
+            <p>Download Resume</p> <img src={Download} alt="Download" />
+          </a>
+          <a
+            rel="noreferrer"
+            target="_blank"
+            type="application/pdf"
+            href={ResumeFILE}
+            className="Tag "
+          >
+            <p>Open Resume</p> <img src={Open} alt="Open" />
+          </a>
+        </div>
+      </div>
     </div>
   );
 }

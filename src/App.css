@@ -540,6 +540,56 @@ span:hover::after {
   height: 222px;
   margin: 0 -80px 140px -20px;
 }
+.Tag {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 90%;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 5px;
+  padding: 4px;
+  border-radius: 2px;
+}
+.Tag img {
+  width: 15px;
+}
+.Tag p {
+  margin: 0px;
+  text-align: left;
+  width: 140px;
+}
+.Tag:hover {
+  color: white;
+  background: #6cb4f6;
+}
+/* Tooltip text */
+.tooltip .tooltiptext {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  visibility: hidden;
+  width: 240px;
+  box-shadow: 0px 0px 5px #ffffff20;
+  background-color: #0c121b;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  transition: all 0.2s;
+  border-radius: 10px;
+  bottom: -65px;
+  margin-right: 80px;
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Sho
+w the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
 @media screen and (max-width: 986px) {
   .Desktop {
     display: none;

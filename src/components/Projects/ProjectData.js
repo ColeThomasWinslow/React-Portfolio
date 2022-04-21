@@ -1,7 +1,7 @@
 import Sorting from "./ProjectPhotos/Sorting.png";
 import PayRoll from "./ProjectPhotos/PayRoll.png";
 import CalculationFinance from "./ProjectPhotos/CalculationFinance.png";
-import BlunderBugs from "./ProjectPhotos/BlunderBugs.png";
+import CheckMark from "./ProjectPhotos/CheckMark.png";
 export const projectData = [
   {
     id: 1,
@@ -21,8 +21,8 @@ export const projectData = [
   },
   {
     id: 2,
-    title: "Blunder Bugs ",
-    img: BlunderBugs,
+    title: "CheckMark Marketplace ",
+    img: CheckMark,
     tech: [
       { name: "React.js" },
       { name: "MySQL" },
@@ -31,7 +31,7 @@ export const projectData = [
       { name: "Redux" },
       { name: "JWT (Json Web Tokens)" },
     ],
-    desc: "Bug tracking system that keeps track of reported software bugs in the development process. Assign roles and give permissions to different employees.",
+    desc: "E-commerce Website ",
     gitLink: "https://github.com/ColeThomasWinslow/Blunder-Bugs",
     LiveLink: "https://sortalgorithms.netlify.app/",
   },

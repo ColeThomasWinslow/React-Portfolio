@@ -520,7 +520,6 @@ span:hover::after {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-
   z-index: -10;
 }
 .gear2 {
@@ -571,13 +570,13 @@ span:hover::after {
   align-items: center;
   visibility: hidden;
   width: 240px;
-  box-shadow: 0px 0px 5px #ffffff20;
+  outline: 2px solid #ffffff2f;
   background-color: #0c121b;
   color: #fff;
   text-align: center;
   padding: 5px 0;
   transition: all 0.2s;
-  border-radius: 10px;
+  border-radius: 5px;
   bottom: -65px;
   margin-right: 80px;
   /* Position the tooltip text - see examples below! */

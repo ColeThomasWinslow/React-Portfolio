@@ -1,33 +1,12 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { projectData } from "./ProjectData";
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+
 function Projects() {
-  const { ref, inView } = useInView();
-
-  const animation = useAnimation();
-
-  useEffect(() => {
-    if (inView) {
-      animation.start({
-        x: 0,
-        transition: { type: "spring", duration: 1, bounce: 0 },
-      });
-    }
-    if (!inView) {
-      animation.start({ x: "-100vw" });
-    }
-  }, [inView, animation]);
   return (
-    <div ref={ref} name="projects" className="Projects">
+    <div name="projects" className="Projects">
       {projectData.map((project) => {
         return (
-          <motion.div
-            animate={animation}
-            key={project.id}
-            exit={{ opacity: 0 }}
-            className="ProjectCard"
-          >
+          <div key={project.id} className="ProjectCard">
             <img className="ProjectImg" src={project.img} alt={project.title} />
             <div className="ProjectInfo">
               <h2 className="SubTitle ProjectTitle">{project.title}</h2>
@@ -56,7 +35,7 @@ function Projects() {
                 </a>
               </div>
             </div>
-          </motion.div>
+          </div>
         );
       })}
     </div>

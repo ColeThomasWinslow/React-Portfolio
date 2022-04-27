@@ -11,7 +11,7 @@ function Projects() {
     if (inView) {
       animation.start({
         x: 0,
-        transition: { type: "spring", duration: 0.8, bounce: 0 },
+        transition: { type: "spring", duration: 1, bounce: 0 },
       });
     }
     if (!inView) {

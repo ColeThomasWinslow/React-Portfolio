@@ -196,7 +196,6 @@ span:hover::after {
   width: 90%;
   max-width: 1600px;
   margin-top: 50px;
-  flex-wrap: wrap;
 }
 .ProjectInfo {
   border: 3px solid #ffffff34;
@@ -592,6 +591,9 @@ w the tooltip text when you mouse over the tooltip container */
 @media screen and (max-width: 986px) {
   .Desktop {
     display: none;
+  }
+  .ProjectCard {
+    flex-wrap: wrap;
   }
   .TechUsedCont p {
     font-size: 10px;

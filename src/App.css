@@ -1,7 +1,7 @@
 body {
   margin: 0px;
-  background: #0a192f;
-  color: white;
+  background: #ffffff;
+
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
@@ -16,35 +16,35 @@ body {
 }
 
 .Title {
-  color: #e6f9fffb;
   margin: 0px;
   font-size: 4.6rem;
 }
 .Secondary {
-  color: #8892b0;
+  color: #2c385b;
 }
 .SubTitle {
   margin: 0px;
   font-size: 1.2rem;
-  color: #6cb4f6;
+  color: #062949;
 }
 
 .Description {
-  color: #ffffffdc;
   font-weight: 300;
   font-size: 1rem;
   line-height: 30px;
-  margin: 10px 0px 10px;
   max-width: 600px;
+}
+.git {
+  color: #0c121b;
 }
 .Btn {
   cursor: pointer;
   text-decoration: none;
   border-radius: 5px;
   background: transparent;
-  border: 2px solid #6cb4f6;
-  color: #6cb4f6;
-  background: linear-gradient(to right, #ffffff34 50%, transparent 50%);
+
+  border: 2px solid black;
+  background: linear-gradient(to right, #062949 50%, #f5f5f5 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   transition: all 0.3s ease-out;
@@ -59,15 +59,18 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 14px;
+
   height: 28px;
   padding: 2px;
   width: 150px;
 }
 .CTA {
-  margin-top: 40px;
   font-size: 14px;
   width: 220px;
   padding: 15px;
+}
+.ProjectTitle {
+  font-weight: 400;
 }
 .NavBar {
   display: flex;
@@ -75,7 +78,9 @@ body {
   padding-top: 28px;
   padding-bottom: 28px;
   z-index: 20;
+  box-shadow: inset 0px 0px 2px #41414195;
   width: 100vw;
+  background: #f5f5f5;
   align-items: center;
   justify-content: space-evenly;
   position: fixed;
@@ -89,10 +94,11 @@ body {
   justify-content: flex-start;
 }
 .TechUsedCont p {
-  font-weight: thin;
+  font-weight: 400;
   background: #ffffff;
-  color: #4f96d8;
-  border-radius: 4px;
+  border: 2px solid #062949;
+  border-radius: 15px;
+  text-transform: uppercase;
   /* box-shadow: inset 0px 0px 4px; */
   padding: 4px;
   padding-left: 10px;
@@ -110,7 +116,7 @@ body {
   padding: 50px;
   justify-content: center;
   flex-direction: column;
-  min-height: 90vh;
+  min-height: 100vh;
   width: 78%;
   max-width: 1300px;
 }
@@ -130,13 +136,13 @@ body {
 .NavElm {
   cursor: pointer;
   text-decoration: none;
-  color: white;
 }
 .Logo {
-  width: 130px;
+  width: 120px;
 }
 .ElmImg {
   width: 18px;
+
   margin-right: 10px;
 }
 .Projects {
@@ -146,26 +152,27 @@ body {
   justify-content: space-evenly;
   align-items: center;
   padding-top: 20px;
-  box-shadow: inset 2px 0px 16px #090d1394;
+
   padding-bottom: 20px;
-  background: #0c1522d5;
 }
 span {
   display: flex;
   align-items: center;
-  font-weight: 400;
+  color: #2c385b;
+  font-weight: 500;
   font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 2px;
   position: relative;
 }
 span::after {
   content: "";
   height: 2px;
-  background: #6cb4f6;
+  background: #062949;
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -12px;
+  bottom: -9px;
   opacity: 0;
   transform: scaleX(0);
   transform-origin: left center;
@@ -173,7 +180,7 @@ span::after {
 }
 span:hover::after {
   transform: scaleX(1);
-  opacity: 1;
+  opacity: 1.02;
 }
 
 .NavElmContainer {
@@ -184,34 +191,30 @@ span:hover::after {
   justify-content: space-evenly;
 }
 .Scrolled {
-  background: #0c1522d5;
+  box-shadow: 0px 0px 2px #41414195;
 }
 
 .ProjectCard {
   display: flex;
+
   justify-content: space-evenly;
   align-items: center;
   margin: 20px;
-  border-radius: 5px;
+
   width: 90%;
   max-width: 1600px;
   margin-top: 50px;
 }
 .ProjectInfo {
-  border: 3px solid #ffffff34;
-  background: #1128505d;
-  /* box-shadow: 2px 0px 10px black; */
+  background: #f5f5f5;
+  box-shadow: 0px 0px 2px #41414195;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   width: 95vw;
   padding: 20px;
-  border-radius: 2px;
+  border-radius: 10px;
   max-width: 700px;
-  background-image: url("./Swirl.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 .ProjectImg {
   border-radius: 2px;
@@ -227,9 +230,13 @@ span:hover::after {
 }
 .Live {
   color: #0c1522c0;
-  background: #8892b0;
-  margin-left: 30px;
+  background: #494949;
+  color: white;
+  margin-left: 10px;
   border: 2px solid white;
+}
+.Live:hover {
+  background: #062949;
 }
 .Direct {
   padding-top: 40px;
@@ -252,7 +259,8 @@ span:hover::after {
   display: none;
 }
 .ContactForm {
-  background: #15305e5d;
+  background: #f5f5f5;
+  box-shadow: 0px 0px 2px grey;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -264,7 +272,7 @@ span:hover::after {
   border-radius: 5px;
   padding-top: 30px;
   padding-bottom: 20px;
-  background-image: url("./Swirl.png");
+
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -285,7 +293,7 @@ span:hover::after {
   padding: 15px;
   width: 70vw;
   max-width: 400px;
-  border-bottom: 5px solid #6cb4f6;
+  border-bottom: 2px solid #062949;
 }
 .EmailBody {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -294,9 +302,10 @@ span:hover::after {
   border: none;
   padding: 15px;
   width: 70vw;
+  margin-bottom: 30px;
   max-width: 400px;
   height: 150px;
-  border-bottom: 5px solid #6cb4f6;
+  border-bottom: 2px solid #062949;
   resize: none;
 }
 .ContactMessage {
@@ -328,7 +337,7 @@ span:hover::after {
 .techImg {
   border-radius: 3px;
   width: 18vw;
-  box-shadow: 2px 3px 5px #0000006b;
+  box-shadow: 0px 0px 4px grey;
   max-width: 170px;
 }
 .Looking {
@@ -339,6 +348,8 @@ span:hover::after {
   background: #0c121b;
   align-items: center;
   width: 240px;
+  color: white;
+  border-radius: 6px;
   justify-content: center;
 }
 .Footer {
@@ -347,7 +358,8 @@ span:hover::after {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-  background: #0c1522d5;
+  box-shadow: inset 0px 0px 2px #41414195;
+  background: #f5f5f5;
   align-items: center;
 }
 .FootNote {
@@ -418,7 +430,7 @@ span:hover::after {
   position: absolute;
   height: 100vh;
   width: 100%;
-  background: #0c1522f5;
+  background: #c7c7c7d1;
 }
 .MobileExternal {
   margin-top: 20px;
@@ -433,7 +445,7 @@ span:hover::after {
 }
 .Big {
   font-size: 1.8rem;
-  padding-bottom: 20px;
+
   border-bottom: 2px solid white;
 }
 .PageBox {
@@ -475,7 +487,7 @@ span:hover::after {
 }
 .MobileNavElm {
   display: flex;
-  background: #6cb4f6;
+  background: white;
   padding: 15px;
   border-radius: 50%;
   align-items: center;
@@ -486,11 +498,15 @@ span:hover::after {
   margin: 30px;
 }
 .MobileNavElm:hover {
-  opacity: 60%;
+  background: #ededed;
 }
 .MobileBtn {
   width: 50vw;
   margin-top: 60px;
+  color: #062949;
+}
+.MobileBtn a {
+  color: white;
 }
 .MobileContainer {
   display: flex;
@@ -522,19 +538,19 @@ span:hover::after {
   z-index: -10;
 }
 .gear2 {
-  filter: opacity(38%);
+  filter: opacity(48%);
   width: 290px;
   height: 290px;
 }
 .gear3 {
   width: 170px;
   height: 170px;
-  filter: opacity(25%);
+  filter: opacity(40%);
   margin: 0 0px -290px -85px;
 }
 .gear1 {
   width: 222px;
-  filter: opacity(15%);
+  filter: opacity(25%);
   height: 222px;
   margin: 0 -80px 140px -20px;
 }
@@ -543,7 +559,7 @@ span:hover::after {
   align-items: center;
   justify-content: space-evenly;
   width: 90%;
-  color: white;
+  color: black;
   text-decoration: none;
   font-size: 14px;
   margin: 5px;
@@ -553,14 +569,25 @@ span:hover::after {
 .Tag img {
   width: 15px;
 }
+.Tube {
+  border-radius: 8px;
+  box-shadow: inset 0px 0px 2px #373737;
+  padding: 4px;
+  height: 30px;
+  margin-left: 20px;
+  display: flex;
+  background: white;
+  width: 90%;
+  justify-content: space-evenly;
+  align-items: center;
+}
 .Tag p {
   margin: 0px;
   text-align: left;
   width: 140px;
 }
 .Tag:hover {
-  color: white;
-  background: #6cb4f6;
+  background: white;
 }
 /* Tooltip text */
 .tooltip .tooltiptext {
@@ -569,9 +596,9 @@ span:hover::after {
   align-items: center;
   visibility: hidden;
   width: 240px;
-  outline: 2px solid #ffffff2f;
-  background-color: #0c121b;
-  color: #fff;
+  box-shadow: 0px 0px 2px #41414195;
+  background: #f5f5f5;
+
   text-align: center;
   padding: 5px 0;
   transition: all 0.2s;

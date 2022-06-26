@@ -26,7 +26,7 @@ function Hero() {
             textAlign: "center",
             maxWidth: "200px",
             margin: "0px",
-            marginTop: "50px",
+            marginTop: "12px",
           }}
           to="contact"
           spy={true}

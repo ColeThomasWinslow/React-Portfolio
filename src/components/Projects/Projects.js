@@ -18,7 +18,7 @@ function Projects() {
               </div>
               <div className="BtnCont">
                 <a
-                  className="Btn SmallBtn"
+                  className="Btn SmallBtn git"
                   rel="noreferrer"
                   target="_blank"
                   href={project.gitLink}

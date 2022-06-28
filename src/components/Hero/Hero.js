@@ -19,7 +19,7 @@ function Hero() {
           I'm a software engineer focused on coding web applications that are
           complex, scalable, and highly performant. Most of my apps are
           developed with the M.E.R.N stack ( MongoDb, Express, React, Node ) but
-          I am very well versed in many different technologies and tech stacks.
+          I am well versed in many different technologies and tech stacks.
         </p>
         <Link
           style={{

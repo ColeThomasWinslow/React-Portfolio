@@ -11,7 +11,7 @@ export const projectData = [
       { name: "React.js" },
       { name: "Mongo DB" },
       { name: "Node & Express" },
-      { name: "styled components" },
+
       { name: "Redux" },
       { name: "JWT (Json Web Tokens)" },
     ],
@@ -21,7 +21,7 @@ export const projectData = [
   },
   {
     id: 2,
-    title: "CheckMark Marketplace ",
+    title: "Checkmark Marketplace ",
     img: CheckMark,
     tech: [
       { name: "React.js" },

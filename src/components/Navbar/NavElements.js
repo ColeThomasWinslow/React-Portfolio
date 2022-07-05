@@ -1,6 +1,7 @@
 import React from "react";
 import Gear from "../../icons/Gear.svg";
 import Folder from "../../icons/Folder.svg";
+import Open from "../../icons/Open.svg";
 import Developer from "../../icons/Developer.svg";
 import Email from "../../icons/Email.svg";
 import { Link } from "react-scroll";
@@ -43,6 +44,19 @@ function NavElements() {
           <span>
             <img className="ElmImg" src={Gear} alt="Tech" />
             Tech
+          </span>
+        </Link>{" "}
+        <Link
+          className="NavElm"
+          to="about"
+          spy={true}
+          offset={-95}
+          smooth={true}
+          duration={400}
+        >
+          <span>
+            <img className="ElmImg" src={Open} alt="About" />
+            About
           </span>
         </Link>
         <Link

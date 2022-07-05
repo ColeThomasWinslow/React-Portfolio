@@ -1,9 +1,6 @@
 body {
   margin: 0px;
-  /* background: #ffffff; */
-
-  background-image: url("./Texture.jpeg");
-  /* background-image: linear-gradient(#ffffff, #f9fafc); */
+  background-image: linear-gradient(#ffffff, #f9fafc);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
@@ -64,11 +61,55 @@ body {
 .Btn:hover {
   background-position: left bottom;
   color: #111828;
+  box-shadow: inset gray 0px 0px 5px;
 }
+.AboutCont {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  width: 100%;
+  display: flex;
+  background-image: url("dot.png");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
 
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 90px;
+
+  padding-bottom: 90px;
+  min-height: 70vh;
+  flex-wrap: wrap;
+}
+.aboutText {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.profileCont {
+  display: flex;
+  overflow: hidden;
+  background-image: linear-gradient(#ffffff, #f9fafc);
+  box-shadow: 0.5px 0.5px 3px #41414185;
+  border-radius: 50%;
+  width: 260px;
+  height: 260px;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
+}
+.AboutCont img {
+  padding-top: 40px;
+  width: 250px;
+  background-position: bottom;
+}
 .SmallBtn {
   display: flex;
   justify-content: center;
+  align-items: center;
   align-items: center;
   font-size: 14px;
   z-index: 30;
@@ -126,6 +167,10 @@ body {
   display: flex;
   justify-content: center;
   width: 100%;
+  background-image: url("dot.png");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
 }
 
 .Hero {
@@ -133,7 +178,8 @@ body {
   padding: 50px;
   justify-content: center;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 80vh;
+
   width: 78%;
   max-width: 1300px;
 }
@@ -170,7 +216,6 @@ body {
 .Projects {
   width: 100%;
   display: flex;
-
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
@@ -183,7 +228,7 @@ span {
   display: flex;
   align-items: center;
   color: #2c385b;
-  font-weight: 500;
+  font-weight: 300;
   font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 2px;
@@ -263,7 +308,7 @@ span:hover::after {
   border-radius: 2px;
   width: 80vw;
 
-  max-width: 390px;
+  max-width: 330px;
 }
 
 .BtnCont {
@@ -278,6 +323,10 @@ span:hover::after {
   color: #111828;
   background: white;
   border: 2px solid #111828;
+}
+.Live:hover {
+  background-color: #062949;
+  color: white;
 }
 
 .Direct {
@@ -304,7 +353,7 @@ span:hover::after {
 }
 
 .ContactForm {
-  background: #f5f5f5;
+  background-image: linear-gradient(#ffffff, #f9fafc);
   box-shadow: 0px 0px 2px grey;
   display: flex;
   align-items: center;
@@ -370,6 +419,7 @@ span:hover::after {
   display: flex;
   width: 100%;
   padding-top: 50px;
+
   justify-content: center;
   align-items: center;
 }
@@ -378,7 +428,7 @@ span:hover::after {
   display: flex;
   justify-content: space-evenly;
   width: 95%;
-  max-width: 900px;
+  max-width: 950px;
   flex-wrap: wrap;
 }
 
@@ -390,55 +440,16 @@ span:hover::after {
   border-radius: 3px;
   width: 18vw;
   box-shadow: 0px 0px 4px grey;
-  max-width: 170px;
-}
-
-.techImg:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: -moz-linear-gradient()
-      (
-        linear,
-        0% 0%,
-        0% 100%,
-        from(rgba(255, 255, 255, 0.15)),
-        to(rgba(0, 0, 0, 0.25))
-      ),
-    -webkit-gradient(linear, left top, right bottom, color-stop(0, rgba(255, 255, 255, 0)), color-stop(0.5, rgba(255, 255, 255, 0.1)), color-stop(0.501, rgba(255, 255, 255, 0)), color-stop(1, rgba(255, 255, 255, 0)));
-  background: -moz-linear-gradient(
-      top,
-      rgba(255, 255, 255, 0.15),
-      rgba(0, 0, 0, 0.25)
-    ),
-    -moz-linear-gradient(left top, rgba(255, 255, 255, 0), rgba(
-            255,
-            255,
-            255,
-            0.1
-          )
-          50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0));
-  background: linear-gradient(
-      top,
-      rgba(255, 255, 255, 0.15),
-      rgba(0, 0, 0, 0.25)
-    ),
-    linear-gradient(
-      left top,
-      rgba(255, 255, 255, 0),
-      rgba(255, 255, 255, 0.1) 50%,
-      rgba(255, 255, 255, 0) 50%,
-      rgba(255, 255, 255, 0)
-    );
+  max-width: 120px;
 }
 
 .Looking {
   font-size: 12px;
 }
-
+.aboutWord {
+  width: 70vw;
+  max-width: 470px;
+}
 .ActiveCont {
   display: flex;
   background: #0c121b;
@@ -714,12 +725,14 @@ span:hover::after {
 
 .Tag p {
   margin: 0px;
+  padding: 2px;
   text-align: left;
   width: 140px;
 }
 
 .Tag:hover {
-  background: white;
+  opacity: 80%;
+  box-shadow: grey inset 0px 0px 3px;
 }
 
 /* Tooltip text */
@@ -730,7 +743,7 @@ span:hover::after {
   visibility: hidden;
   width: 240px;
   box-shadow: 0px 0px 2px #41414195;
-  background: #f5f5f5;
+  background-image: linear-gradient(#ffffff, #f9fafc);
 
   text-align: center;
   padding: 5px 0;
@@ -781,11 +794,18 @@ w the tooltip text when you mouse over the tooltip container */
   .Title {
     font-size: 2.3rem;
   }
-
+  .profileCont {
+    display: none;
+  }
   .Description {
     font-size: 14px;
   }
-
+  .profile {
+    display: none;
+  }
+  .AboutCont {
+    width: 65vw;
+  }
   .BtnCont {
     width: 100%;
     flex-wrap: wrap;
@@ -793,7 +813,9 @@ w the tooltip text when you mouse over the tooltip container */
     align-items: center;
     justify-content: center;
   }
-
+  .aboutText {
+    width: 80vw;
+  }
   .Hero {
     padding: 20px;
     padding-top: 110px;
@@ -807,14 +829,20 @@ w the tooltip text when you mouse over the tooltip container */
     margin: 0px;
     margin-top: 10px;
   }
-
+  .profile {
+    display: none;
+  }
   .git {
     margin-right: 0px;
   }
   .SmallBtn {
     width: 90%;
   }
-
+  .AboutCont {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
   .container {
     display: none;
   }

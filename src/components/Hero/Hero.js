@@ -15,18 +15,13 @@ function Hero() {
         <p className="SubTitle">Hi, my name is</p>
         <h2 className="Title">Cole Winslow.</h2>
         <h2 className="Title Secondary">I build things for the web</h2>
-        <p className="Description">
-          I'm a software engineer focused on coding web applications that are
-          complex, scalable, and highly performant. Most of my apps are
-          developed with the M.E.R.N stack ( MongoDb, Express, React, Node ) but
-          I am well versed in many different technologies and tech stacks.
-        </p>
+
         <Link
           style={{
             textAlign: "center",
             maxWidth: "200px",
             margin: "0px",
-            marginTop: "12px",
+            marginTop: "25px",
           }}
           to="contact"
           spy={true}

@@ -1,4 +1,5 @@
 import React from "react";
+import About from "../components/About/About";
 import Contact from "../components/Contact/Contact";
 import Footer from "../components/Footer/Footer";
 import Hero from "../components/Hero/Hero";
@@ -13,6 +14,7 @@ function Home() {
         <Hero />
         <Projects />
         <Tech />
+        <About />
         <Contact />
       </div>
       <Footer />
